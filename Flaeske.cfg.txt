@@ -1,0 +1,86 @@
+// this script is made for :    https://steamcommunity.com/profiles/76561199070545292
+// By Sn1per               :    https://www.steamcommunity.com/id/benjamin_falch : https://www.github.com/smallbenji
+
+// Start parameters:
+// +fps_max 0 -nojoy -high -fullscreen +mat_disable_fancy_blending 1 +cl_forcepreload 1 -limitvsconst -forcenovsync +r_dynamic 0 +exec Flaeske.cfg
+// Res:
+// 1024 x 768 4:3 stretched
+
+//Part 1 : Crosshair
+
+echo Crosshair loaded. [X]
+
+
+//Part 2 : Map
+cl_hud_radar_scale 1
+cl_radar_scale 0.4
+cl_radar_icon_scale_min 0.8
+cl_radar_always_centered 0
+cl_radar_rotate 1
+
+echo Map settings loaded. [X]
+
+
+//Part 3 : Viewmodel
+cl_viewmodel_shift_left_amt "0.500000"
+cl_viewmodel_shift_right_amt "0.250000"
+viewmodel_fov "68"
+viewmodel_offset_x "2"
+viewmodel_offset_y "-2.0"
+viewmodel_offset_z "-1"
+viewmodel_presetpos "1"
+viewmodel_recoil "1.0"
+cl_bob_lower_amt "5.000000"
+cl_bobamt_vert "0.100000"
+cl_bobamt_lat "0.100000"
+cl_bobcycle "0.98"
+
+echo Viewmodel settings loaded. [X]
+
+
+//part 4 : Keybinds
+bind n "Spammer"
+bind h "say mp_modstand 0"
+bind p "r_cleardecals"
+
+echo Keybinds loaded. [X]
+
+
+//Part 5 : Main commands
+
+con_enable "1"
+cl_autowepswitch "0"
+cl_join_advertise "2"
+
+echo Commands loaded. [X]
+
+
+//Part 6 : Special scripts
+
+alias Spammer Spammer0
+alias "Spammer0" "say How much did you tag that wall for??; alias Spammer Spammer1"
+alias "Spammer1" "say This server is VAC secured, no aw users here. Buy Unityhacks.com; alias Spammer Spammer2"
+alias "Spammer2" "say Your Brett got delivered by Unityhacks.com ; alias Spammer Spammer3"
+alias "Spammer3" "say I don't cheat, I am just smurfing with Unityhacks.com ; alias Spammer Spammer4"
+alias "Spammer4" "say I can hear you chrouching, you think i hack? You are Good damn right Son I use Unityhacks.com; alias Spammer Spammer5"
+alias "Spammer5" "say server cvar 'sv_rekt' changed to 1. ; alias Spammer Spammer6"
+alias "Spammer6" "say You think you can kill me? You are Funny. Not without Unityhacks.com dude ; alias Spammer Spammer7"
+alias "Spammer7" "say I thought I put bots on hard, why are they on easy? ; alias Spammer Spammer8"
+alias "Spammer8" "say Unityhacks > all refund your copy paste trash.; alias Spammer Spammer9"
+alias "Spammer9" "say Unityhacks.com OWNS ME AND ALL; alias Spammer Spammer10"
+alias "Spammer10" "say you guys buy accounts on ebay?? Go buy them on Unityhacks.com it's much cheaper; alias Spammer Spammer11"
+alias "Spammer11" "say You have the reaction time of a dead puppy. Buy Unityhacks.com to improve ; alias Spammer Spammer12"
+alias "Spammer12" "say Without Unityhacks.com the only thing you carry is an extra chromosome.; alias Spammer Spammer13"
+alias "Spammer13" "say If I wanted to suicide, i'd jump from your ego to your elo, just get good and buy Unityhacks.com; alias Spammer Spammer14"
+alias "Spammer14" "say is that a decoy, or are you trying to shoot somebody?; alias Spammer Spammer15"
+alias "Spammer15" "say Don't cry and say I'll get banned, it's just annoying. I wont get banned anyways with Unityhacks.com; alias Spammer Spammer16"
+alias "Spammer16" "say Nice $4750 decoy you just bought. Buy Unityhacks.com to finally hit your shots.; alias Spammer Spammer17"
+alias "Spammer17" "say Even Noah can't carry these animals without Unityhacks.com..; alias Spammer Spammer18"
+alias "Spammer18" "say www.unityhacks.com - best features without lack of security.; alias Spammer Spammer0"
+
+echo Scripts loaded. [X]
+
+// : Load this script into config.
+host_writeconfig
+
+echo Loaded flaske.cfg [X]
